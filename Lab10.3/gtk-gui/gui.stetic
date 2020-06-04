@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/Lab10.1.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="506 187">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed2">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="text">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent est sapien, mattis dictum euismod non, malesuada vitae sem.
+Aliquam nulla tellus, feugiat sed rutrum nec, consectetur nec purus.
+Morbi sed placerat neque.
+Nulla nec sapien consectetur mauris aliquet pellentesque quis nec nisi.</property>
+          </widget>
+          <packing>
+            <property name="X">17</property>
+            <property name="Y">25</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="proceed">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Proceed</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Released" handler="Proceed" />
+          </widget>
+          <packing>
+            <property name="X">15</property>
+            <property name="Y">139</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="to_replace">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">89</property>
+            <property name="Y">139</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="status">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Status: </property>
+          </widget>
+          <packing>
+            <property name="X">271</property>
+            <property name="Y">146</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
