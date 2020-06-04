@@ -39,7 +39,7 @@ public partial class MainWindow
 		this.fixed1.Add(this.result);
 		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.result]));
 		w2.X = 94;
-		w2.Y = 13;
+		w2.Y = 12;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.matrix = new global::Gtk.Label();
 		this.matrix.Name = "matrix";

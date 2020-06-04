@@ -36,7 +36,7 @@
           </widget>
           <packing>
             <property name="X">94</property>
-            <property name="Y">13</property>
+            <property name="Y">12</property>
           </packing>
         </child>
         <child>
