@@ -10,10 +10,10 @@ public partial class MainWindow : Gtk.Window
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         column1 = new TreeViewColumn("Sentences", cellView1);
+        column1.AddAttribute(cellView1, "text", 0);
 
         Build();
 
-        column1.AddAttribute(cellView1, "text", 0);
         treeview1.Model = array1;
         treeview1.AppendColumn(column1);
 

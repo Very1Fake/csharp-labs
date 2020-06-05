@@ -9,6 +9,7 @@ public partial class MainWindow : Gtk.Window
     private Gtk.ListStore array2 = new Gtk.ListStore(typeof(string));
     private CellRendererText cellView2 = new CellRendererText();
     private TreeViewColumn column2;
+
     private int[] F = new int[18];
 
     public MainWindow() : base(Gtk.WindowType.Toplevel)
@@ -24,11 +25,6 @@ public partial class MainWindow : Gtk.Window
         column2.AddAttribute(cellView2, "text", 0);
         treeview2.Model = array2;
         treeview2.AppendColumn(column2);
-
-        array1.InsertWithValues(0, "Hello World!!1");
-        array1.InsertWithValues(1, "How are you ?");
-        array1.InsertWithValues(2, "English");
-        array1.InsertWithValues(3, "Rust is fast");
     }
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
