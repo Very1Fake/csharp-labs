@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/Lab8.2.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="157 69">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Calculate</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Released" handler="Calculate" />
+          </widget>
+          <packing>
+            <property name="X">5</property>
+            <property name="Y">3</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="result">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Result: </property>
+          </widget>
+          <packing>
+            <property name="X">9</property>
+            <property name="Y">43</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.SpinButton" id="spinbutton1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Lower">1</property>
+            <property name="Upper">100</property>
+            <property name="PageIncrement">10</property>
+            <property name="StepIncrement">1</property>
+            <property name="ClimbRate">1</property>
+            <property name="Numeric">True</property>
+            <property name="Value">1</property>
+          </widget>
+          <packing>
+            <property name="X">88</property>
+            <property name="Y">3</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
